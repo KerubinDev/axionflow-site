@@ -1,0 +1,45 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="AxionFlow - Engineering First. AI Second." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.svg`} />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+		<!-- Styles -->
+		<link rel="stylesheet" href={`${import.meta.env.BASE_URL}/styles.css`} />
+	</head>
+	<body class="bg-[#0F1115] text-[#EAEAEA] font-sans antialiased selection:bg-[#3B82F6] selection:text-white">
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--font-mono: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+		--font-sans: 'Inter', sans-serif;
+	}
+	html {
+		font-family: var(--font-sans);
+		background: #0F1115;
+		color: #EAEAEA;
+	}
+	code, pre {
+		font-family: var(--font-mono);
+	}
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-mono);
+    }
+</style>

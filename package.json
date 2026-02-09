@@ -1,0 +1,20 @@
+{
+    "name": "axionflow-site",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "deploy": "gh-pages -d dist"
+    },
+    "devDependencies": {
+        "@astrojs/tailwind": "^6.0.2",
+        "@types/node": "^20.19.33",
+        "astro": "^5.17.1",
+        "tailwindcss": "^4.1.18",
+        "typescript": "^5.9.3"
+    }
+}
