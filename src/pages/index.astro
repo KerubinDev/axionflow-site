@@ -26,245 +26,244 @@ import Layout from '../layouts/Layout.astro';
 
 	<main>
 		<!-- HERO SECTION -->
-		<section class="relative pt-32 pb-20 px-6 border-b border-white/5">
+		<section class="relative pt-32 pb-24 px-6 border-b border-white/5 bg-[#0F1115]">
 			<div class="max-w-7xl mx-auto">
-				<div class="max-w-3xl">
-					<h1 class="font-mono text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-8">
-						Engineering First.<br/>
-						<span class="text-white/40">AI Second.</span>
+				<div class="max-w-4xl">
+					<div class="inline-block border border-[#3B82F6]/30 bg-[#3B82F6]/5 px-3 py-1 mb-6 text-xs font-mono text-[#3B82F6] tracking-wide">
+						>> SYSTEM_STATUS: ONLINE
+					</div>
+					<h1 class="font-mono text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-8 text-white">
+						Deterministic LLM Systems.<br/>
+						<span class="text-white/40">For Enterprise.</span>
 					</h1>
 					
-					<p class="text-xl md:text-2xl text-white/60 max-w-2xl leading-relaxed mb-12">
-						We build, audit, and repair production LLM systems.
-						No magic. No prompt engineering hype. Just strict, deterministic pipelines.
+					<p class="text-xl md:text-2xl text-white/60 max-w-2xl leading-relaxed mb-12 font-light">
+						We replace probabilistic guesswork with structural engineering. 
+						<span class="text-white">Audit, Architecture, and Repair</span> for mission-critical AI pipelines.
 					</p>
 
 					<div class="flex flex-col sm:flex-row gap-4">
-						<a href="mailto:kelvin.moraes117@gmail.com" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white px-8 py-4 font-mono font-bold text-lg inline-flex items-center justify-center gap-2 transition-colors">
-							[ SCHEDULE AUDIT ]
+						<a href="mailto:kelvin.moraes117@gmail.com" class="bg-[#EAEAEA] hover:bg-white text-[#0F1115] px-8 py-4 font-mono font-bold text-lg inline-flex items-center justify-center gap-2 transition-colors">
+							[ INITIATE AUDIT ]
 						</a>
 						<a href="https://github.com/KerubinDev/AxionFlow" target="_blank" rel="noopener noreferrer" class="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 font-mono text-lg inline-flex items-center justify-center gap-2 transition-colors">
-							View Engine Code ↗
+							View Engine Source ↗
 						</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- REALITY CHECK SECTION -->
-		<section class="py-24 px-6 border-b border-white/5 bg-[#0F1115]">
+		<!-- THE THREAT (REALITY CHECK) -->
+		<section class="py-24 px-6 border-b border-white/5 bg-[#0A0C10]">
 			<div class="max-w-7xl mx-auto">
+				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">01 // The Risk Profile</div>
 				<div class="grid md:grid-cols-3 gap-px bg-white/10 border border-white/10">
 					<!-- Card 1 -->
-					<div class="bg-[#0F1115] p-8 md:p-12">
-						<div class="font-mono text-[#F59E0B] text-sm mb-4">01 // THE BLACK BOX PROBLEM</div>
-						<h3 class="text-xl font-bold mb-4 font-mono">Unpredictable Wrappers</h3>
-						<p class="text-white/60 leading-relaxed">
-							Most "AI features" are unpredictable wrappers around API calls. You don't know why they fail, you can't replay errors, and you can't guarantee safety.
+					<div class="bg-[#0F1115] p-10 hover:bg-[#13161C] transition-colors">
+						<div class="font-mono text-[#F59E0B] text-xs mb-4">CRITICAL_FAILURE: BLACK_BOX</div>
+						<h3 class="text-xl font-bold mb-4 font-mono text-white">Liability Wrappers</h3>
+						<p class="text-white/60 leading-relaxed text-sm">
+							Most enterprise "AI" is just a wrapper around an API call you don't control. When it hallucinates in production, you have no audit trail, no replayability, and no legal defense.
 						</p>
 					</div>
 
 					<!-- Card 2 -->
-					<div class="bg-[#0F1115] p-8 md:p-12">
-						<div class="font-mono text-[#F59E0B] text-sm mb-4">02 // TECH DEBT VELOCITY</div>
-						<h3 class="text-xl font-bold mb-4 font-mono">Unverified Code</h3>
-						<p class="text-white/60 leading-relaxed">
-							Generated code is often unverified code. Without a rigid validation layer, your team is merging bugs faster than they can write tests.
+					<div class="bg-[#0F1115] p-10 hover:bg-[#13161C] transition-colors">
+						<div class="font-mono text-[#F59E0B] text-xs mb-4">CRITICAL_FAILURE: VELOCITY</div>
+						<h3 class="text-xl font-bold mb-4 font-mono text-white">Technical Debt Entropy</h3>
+						<p class="text-white/60 leading-relaxed text-sm">
+							Generated code without rigid AST validation is just accelerated technical debt. Your team is merging probabilistic bugs faster than your CI can catch them.
 						</p>
 					</div>
 
 					<!-- Card 3 -->
-					<div class="bg-[#0F1115] p-8 md:p-12">
-						<div class="font-mono text-[#F59E0B] text-sm mb-4">03 // COMPLIANCE & RISK</div>
-						<h3 class="text-xl font-bold mb-4 font-mono">Legal Exposure</h3>
-						<p class="text-white/60 leading-relaxed">
-							If you can't trace exactly why the model took an action, you can't use it in regulated environments. "The AI did it" is not a legal defense.
+					<div class="bg-[#0F1115] p-10 hover:bg-[#13161C] transition-colors">
+						<div class="font-mono text-[#F59E0B] text-xs mb-4">CRITICAL_FAILURE: COMPLIANCE</div>
+						<h3 class="text-xl font-bold mb-4 font-mono text-white">Regulatory Exposure</h3>
+						<p class="text-white/60 leading-relaxed text-sm">
+							GDPR and EU AI Act require explainability. "The model did it" is not a valid root cause analysis for a regulated industry audit.
 						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- PHILOSOPHY SECTION -->
-		<section id="philosophy" class="py-24 px-6 border-b border-white/5">
-			<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-				<div>
-					<h2 class="font-mono text-3xl md:text-4xl font-bold mb-6">We don't fix code with "Chat". <span class="text-white/40">We fix it with Pipelines.</span></h2>
-					<p class="text-lg text-white/60 mb-8 leading-relaxed">
-						We reject the idea of the "chatbot assistant". Production-grade AI requires a Software Engineering approach.
+		<!-- THE MECHANISM (AXIONFLOW ENGINE) -->
+		<section id="philosophy" class="py-24 px-6 border-b border-white/5 bg-[#0F1115]">
+			<div class="max-w-7xl mx-auto">
+				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">02 // The Mechanism</div>
+				<div class="grid lg:grid-cols-2 gap-16 items-start">
+					<div>
+						<h2 class="font-mono text-3xl md:text-4xl font-bold mb-6 text-white">
+							Infrastructure,<br/><span class="text-white/40">Not Magic.</span>
+						</h2>
+						<p class="text-lg text-white/60 mb-8 leading-relaxed">
+							We don't sell prompt engineering. We implement <strong>Standardized Intelligence Pipelines</strong>.
+							Every LLM interaction is encapsulated, typed, and structurally validated before it touches your codebase.
+						</p>
+						
+						<div class="space-y-0 border-l border-white/10 ml-3">
+							<div class="relative pl-8 pb-10">
+								<div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-[#3B82F6] rounded-full"></div>
+								<h4 class="font-bold mb-1 font-mono text-white">1. Static Analysis (AST)</h4>
+								<p class="text-sm text-white/50">We parse your codebase to generate a strict context graph, not a text dump.</p>
+							</div>
+							<div class="relative pl-8 pb-10">
+								<div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-[#3B82F6] rounded-full"></div>
+								<h4 class="font-bold mb-1 font-mono text-white">2. Deterministic Planning</h4>
+								<p class="text-sm text-white/50">The model generates a structured implementation plan (Markdown/JSON) for human review.</p>
+							</div>
+							<div class="relative pl-8 pb-10">
+								<div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-[#3B82F6] rounded-full"></div>
+								<h4 class="font-bold mb-1 font-mono text-white">3. Atomic Execution</h4>
+								<p class="text-sm text-white/50">Changes are applied as standard Unified Diffs. Zero hallucinated file paths.</p>
+							</div>
+							<div class="relative pl-8">
+								<div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-green-500 rounded-full"></div>
+								<h4 class="font-bold mb-1 font-mono text-white">4. Validation Gate</h4>
+								<p class="text-sm text-white/50">Mandatory build/test pass before commit. Broken code is automatically rejected.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Terminal Visual -->
+					<div class="bg-[#0A0C10] border border-white/10 rounded-sm font-mono text-xs md:text-sm shadow-2xl overflow-hidden">
+						<div class="flex items-center gap-2 px-4 py-3 border-b border-white/5 bg-[#13161C]">
+							<div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+							<div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+							<div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+							<div class="ml-auto text-white/30">axion-cli — 80x24</div>
+						</div>
+						<div class="p-6 space-y-2 font-mono">
+							<div class="text-white/50">$ axion audit --strict</div>
+							<div class="text-[#3B82F6]">> Initializing Structural Analysis...</div>
+							<div class="text-white/70">[INFO] AST Context loaded: 14,203 nodes</div>
+							<div class="text-white/70">[INFO] Vector DB connection: ESTABLISHED</div>
+							<div class="text-[#F59E0B]">[WARN] Non-deterministic pattern detected in /src/utils/ai.ts:42</div>
+							<div class="text-white/70">       > Reason: Unbounded context window in API call</div>
+							<div class="text-white/50">$ axion fix --target /src/utils/ai.ts</div>
+							<div class="text-[#3B82F6]">> Generating deterministic context wrapper...</div>
+							<div class="text-green-500">[SUCCESS] Patch applied. Tests passed (4/4).</div>
+							<div class="animate-pulse text-[#3B82F6]">_</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- TECHNICAL LEADERSHIP -->
+		<section class="py-24 px-6 border-b border-white/5 bg-[#0F1115]">
+			<div class="max-w-7xl mx-auto">
+				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">03 // Technical Ownership</div>
+				<div class="max-w-4xl border-l-4 border-[#3B82F6] pl-8 md:pl-12 py-2">
+					<h2 class="font-mono text-2xl md:text-3xl font-bold mb-6 text-white">
+						"I do not deploy hope.<br/>I deploy verified code."
+					</h2>
+					<p class="text-lg text-white/70 leading-relaxed mb-6">
+						AxionFlow exists because I refused to let stochastic models degrade my production environments. 
+						I designed this engine to satisfy the most paranoid engineering standards: <strong>mine</strong>.
+					</p>
+					<p class="text-base text-white/60 leading-relaxed mb-10 max-w-2xl">
+						When you engage with AxionFlow, you are not hiring a chatbot wrapper agency. 
+						You are hiring a Principal Architect who assumes personal technical responsibility for the stability, security, and determinism of your AI infrastructure.
 					</p>
 					
-					<div class="space-y-6">
-						<div class="flex gap-4">
-							<div class="font-mono text-[#3B82F6] font-bold">01.</div>
+					<div class="flex flex-wrap items-center gap-6 pt-4 border-t border-white/5">
+						<div class="flex items-center gap-4">
+							<div class="w-14 h-14 bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-full flex items-center justify-center font-mono font-bold text-[#3B82F6] text-xl">
+								K
+							</div>
 							<div>
-								<h4 class="font-bold mb-1 font-mono">Analyze</h4>
-								<p class="text-sm text-white/60">Deep AST parsing of your existing codebase.</p>
+								<div class="font-mono font-bold text-white tracking-wide">Kelvin Moraes</div>
+								<div class="text-sm text-white/40 font-mono">Principal Engineer & Architect</div>
 							</div>
 						</div>
-						<div class="flex gap-4">
-							<div class="font-mono text-[#3B82F6] font-bold">02.</div>
-							<div>
-								<h4 class="font-bold mb-1 font-mono">Plan</h4>
-								<p class="text-sm text-white/60">Deterministic step-by-step implementation plans (Markdown).</p>
-							</div>
+						<div class="flex gap-6 text-sm font-mono text-[#3B82F6]">
+							<a href="https://github.com/KerubinDev" target="_blank" class="hover:underline flex items-center gap-1">GITHUB_PROFILE ↗</a>
+							<a href="https://www.linkedin.com/in/kelvin-moraes-1620043a4/" target="_blank" class="hover:underline flex items-center gap-1">LINKEDIN_PROFILE ↗</a>
 						</div>
-						<div class="flex gap-4">
-							<div class="font-mono text-[#3B82F6] font-bold">03.</div>
-							<div>
-								<h4 class="font-bold mb-1 font-mono">Execute</h4>
-								<p class="text-sm text-white/60">Generation of standardUnified Diffs (not direct mutations).</p>
-							</div>
-						</div>
-						<div class="flex gap-4">
-							<div class="font-mono text-[#3B82F6] font-bold">04.</div>
-							<div>
-								<h4 class="font-bold mb-1 font-mono">Validate</h4>
-								<p class="text-sm text-white/60">Mandatory local builds, tests, and linting before merge.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="bg-white/5 border border-white/10 p-8 font-mono text-sm overflow-hidden">
-					<div class="flex items-center gap-2 mb-6 border-b border-white/10 pb-4">
-						<div class="w-3 h-3 rounded-full bg-red-500"></div>
-						<div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-						<div class="w-3 h-3 rounded-full bg-green-500"></div>
-						<div class="ml-4 text-white/40">pipeline.log</div>
-					</div>
-					<div class="space-y-2 text-white/80">
-						<div class="flex gap-2"><span class="text-blue-400">➜</span> <span>Analyze: Parsing project structure...</span></div>
-						<div class="flex gap-2"><span class="text-[#3B82F6]">✓</span> <span>Found 14 source files</span></div>
-						<div class="flex gap-2"><span class="text-blue-400">➜</span> <span>Plan: Generative architectural review...</span></div>
-						<div class="flex gap-2"><span class="text-[#3B82F6]">✓</span> <span>Plan generated: implementation_plan.md</span></div>
-						<div class="flex gap-2"><span class="text-[#F59E0B]">⚠</span> <span>Review required: Breaking change detected</span></div>
-						<div class="flex gap-2"><span class="text-blue-400">➜</span> <span>Execute: Applying diffs...</span></div>
-						<div class="flex gap-2"><span class="text-[#3B82F6]">✓</span> <span>3 files modified</span></div>
-						<div class="flex gap-2"><span class="text-blue-400">➜</span> <span>Validate: Running test suite...</span></div>
-						<div class="flex gap-2"><span class="text-green-500">✓</span> <span>Tests passed (42/42)</span></div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- SERVICES SECTION -->
-		<section id="services" class="py-24 px-6 bg-[#0F1115]">
+		<!-- OFFERING (SERVICES) -->
+		<section id="services" class="py-24 px-6 bg-[#0A0C10]">
 			<div class="max-w-7xl mx-auto">
+				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">04 // Engagement Models</div>
 				<div class="grid md:grid-cols-2 gap-8">
 					<!-- Service 1 -->
-					<div id="audit" class="border border-white/10 bg-white/5 p-8 md:p-12 hover:border-[#3B82F6]/50 transition-colors group">
-						<div class="font-mono text-[#3B82F6] text-sm mb-6 group-hover:text-white transition-colors">> OFFER_01: SYSTEM AUDIT</div>
-						<h3 class="text-2xl font-bold mb-6 font-mono">Technical Traceability Audit</h3>
-						<p class="text-white/60 mb-8 leading-relaxed">
-							We reverse-engineer your current LLM implementation to identify non-deterministic behaviors and security gaps.
+					<div class="border border-white/10 bg-[#0F1115] p-10 hover:border-[#3B82F6]/50 transition-colors group relative overflow-hidden">
+						<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+							<svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 12l10 10 10-10L12 2zm0 18l-8-8 8-8 8 8-8 8z"/></svg>
+						</div>
+						<div class="font-mono text-[#3B82F6] text-xs mb-6 tracking-widest uppercase">>>> SERVICE_ID: AUDIT_CORE</div>
+						<h3 class="text-2xl font-bold mb-4 font-mono text-white">Production Risk Audit</h3>
+						<p class="text-white/60 mb-8 leading-relaxed text-sm h-16">
+							A forensic analysis of your current LLM stack. We identify non-deterministic paths, security holes, and "magic" prompt dependencies.
 						</p>
-						<ul class="space-y-3 font-mono text-sm text-white/80 border-t border-white/10 pt-6">
-							<li class="flex items-center gap-2"><span class="text-[#3B82F6]">+</span> Vulnerability Report</li>
-							<li class="flex items-center gap-2"><span class="text-[#3B82F6]">+</span> Deterministic Trace Map</li>
-							<li class="flex items-center gap-2"><span class="text-[#3B82F6]">+</span> Risk Assessment Field Guide</li>
-						</ul>
+						<div class="bg-black/40 border border-white/5 p-4 mb-8">
+							<div class="text-xs font-mono text-white/40 mb-2 uppercase">Deliverables</div>
+							<ul class="space-y-2 font-mono text-xs text-white/70">
+								<li class="flex items-start gap-2"><span class="text-[#3B82F6]">></span> Traceability Matrix (Source -> Output)</li>
+								<li class="flex items-start gap-2"><span class="text-[#3B82F6]">></span> Vulnerability Report (Injection/Leakage)</li>
+								<li class="flex items-start gap-2"><span class="text-[#3B82F6]">></span> Refactoring Plan for Determinism</li>
+							</ul>
+						</div>
 					</div>
 
 					<!-- Service 2 -->
-					<div id="architecture" class="border border-white/10 bg-white/5 p-8 md:p-12 hover:border-[#3B82F6]/50 transition-colors group">
-						<div class="font-mono text-[#3B82F6] text-sm mb-6 group-hover:text-white transition-colors">> OFFER_02: ARCHITECTURE DESIGN</div>
-						<h3 class="text-2xl font-bold mb-6 font-mono">Pipeline Architecture</h3>
-						<p class="text-white/60 mb-8 leading-relaxed">
-							We design and build the orchestration layer for your product using AxionFlow principles. Fully containerized and strict.
+					<div class="border border-white/10 bg-[#0F1115] p-10 hover:border-[#3B82F6]/50 transition-colors group relative overflow-hidden">
+						<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+							<svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v16H4z"/></svg>
+						</div>
+						<div class="font-mono text-[#3B82F6] text-xs mb-6 tracking-widest uppercase">>>> SERVICE_ID: ARCH_SYSTEM</div>
+						<h3 class="text-2xl font-bold mb-4 font-mono text-white">Pipeline Architecture</h3>
+						<p class="text-white/60 mb-8 leading-relaxed text-sm h-16">
+							End-to-end design and implementation of a self-healing, locally-runnable AI orchestration layer utilizing the AxionFlow engine.
 						</p>
-						<ul class="space-y-3 font-mono text-sm text-white/80 border-t border-white/10 pt-6">
-							<li class="flex items-center gap-2"><span class="text-[#3B82F6]">+</span> Custom Orchestration Engine</li>
-							<li class="flex items-center gap-2"><span class="text-[#3B82F6]">+</span> Tool Definition & Security</li>
-							<li class="flex items-center gap-2"><span class="text-[#3B82F6]">+</span> Local-First CI/CD Integration</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ENGINE SECTION -->
-		<section class="py-24 px-6 border-y border-white/5">
-			<div class="max-w-7xl mx-auto">
-				<div class="bg-[#0F1115] border border-white/10 p-8 md:p-16 text-center relative overflow-hidden">
-					<div class="absolute inset-0 bg-gradient-to-r from-[#3B82F6]/5 to-transparent pointer-events-none"></div>
-					
-					<h2 class="font-mono text-2xl md:text-3xl font-bold mb-6">POWERED BY AXIONFLOW</h2>
-					<p class="text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
-						Our methodology isn't theoretical. It's built on <strong>AxionFlow</strong>, our open-source orchestration engine.
-						We don't sell proprietary lock-in. We build on transparent tooling.
-					</p>
-					
-					<div class="flex flex-wrap justify-center gap-8 font-mono text-sm text-[#3B82F6] mb-12">
-						<span>[ Open Source MIT ]</span>
-						<span>[ Local-First ]</span>
-						<span>[ Audit-Native ]</span>
-					</div>
-
-					<a href="https://github.com/KerubinDev/AxionFlow" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white hover:text-[#3B82F6] transition-colors border-b border-white/20 hover:border-[#3B82F6] pb-1">
-						Explore the Repository ↗
-					</a>
-				</div>
-			</div>
-		</section>
-
-		<!-- TECHNICAL LEAD SECTION -->
-		<section class="py-24 px-6 border-b border-white/5 bg-[#0F1115]">
-			<div class="max-w-4xl mx-auto">
-				<div class="border-l-2 border-[#3B82F6] pl-6 md:pl-10">
-					<div class="font-mono text-[#3B82F6] text-sm mb-4">TECHNICAL OWNERSHIP</div>
-					<h2 class="font-mono text-3xl font-bold mb-6">Built by Engineers, for Engineers.</h2>
-					<p class="text-xl text-white/60 leading-relaxed mb-8">
-						AxionFlow was born from a refusal to accept non-deterministic behavior in production software. I designed this engine to replace "prompt engineering" guesswork with verifiable structural analysis.
-					</p>
-					<p class="text-lg text-white/60 leading-relaxed mb-10">
-						I assume technical responsibility for the rigorous standards this tool enforces. It is not a toy; it is an infrastructure component for serious engineering teams.
-					</p>
-					
-					<div class="flex items-center gap-4">
-						<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center font-mono font-bold text-[#3B82F6]">
-							K
-						</div>
-						<div>
-							<div class="font-mono font-bold text-white">Kelvin</div>
-							<div class="text-sm text-white/40">Principal Engineer & Architect</div>
-						</div>
-						<div class="ml-auto flex gap-4 text-sm text-white/40 font-mono">
-							<a href="https://github.com/KerubinDev" target="_blank" class="hover:text-white transition-colors">GitHub ↗</a>
-							<a href="https://www.linkedin.com/in/kelvin-moraes-1620043a4/" target="_blank" class="hover:text-white transition-colors">LinkedIn ↗</a>
-							<a href="mailto:kelvin.moraes117@gmail.com" class="hover:text-white transition-colors">Email ↗</a>
+						<div class="bg-black/40 border border-white/5 p-4 mb-8">
+							<div class="text-xs font-mono text-white/40 mb-2 uppercase">Deliverables</div>
+							<ul class="space-y-2 font-mono text-xs text-white/70">
+								<li class="flex items-start gap-2"><span class="text-[#3B82F6]">></span> Containerized Orchestration Engine</li>
+								<li class="flex items-start gap-2"><span class="text-[#3B82F6]">></span> Custom CLI Tooling for your Team</li>
+								<li class="flex items-start gap-2"><span class="text-[#3B82F6]">></span> CI/CD Integration & Test Suites</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- CTA -->
-		<section class="py-32 px-6 text-center">
-			<div class="max-w-4xl mx-auto">
-				<h2 class="font-mono text-3xl md:text-5xl font-bold mb-8 tracking-tight">READY TO STABILIZE YOUR INTELLIGENCE?</h2>
-				<p class="text-xl text-white/40 mb-12 font-light">Stop gambling with probability. Start engineering with certainty.</p>
-				
-				<a href="mailto:kelvin.moraes117@gmail.com" class="inline-block bg-[#EAEAEA] text-[#0F1115] hover:bg-white px-10 py-5 font-mono font-bold text-lg transition-colors">
-					[ EMAIL ENGINEERING TEAM ]
+		<!-- FOOTER CTA -->
+		<section class="py-32 px-6 border-t border-white/5 bg-[#0F1115] text-center">
+			<div class="max-w-3xl mx-auto">
+				<h2 class="font-mono text-4xl font-bold mb-8 text-white tracking-tight">System Stability Required?</h2>
+				<p class="text-lg text-white/40 mb-12 font-light">
+					If you are ready to treat AI as a deterministic system component rather than a magic box, we should talk.
+				</p>
+				<a href="mailto:kelvin.moraes117@gmail.com" class="inline-flex items-center justify-center px-10 py-5 bg-[#3B82F6] hover:bg-[#2563EB] text-white font-mono font-bold text-lg transition-all transform hover:scale-105 shadow-xl shadow-blue-900/20">
+					INITIATE_CONTACT()
 				</a>
-				<div class="mt-6 text-sm font-mono text-white/30">
-					kelvin.moraes117@gmail.com
+				<div class="mt-8 font-mono text-sm text-white/30">
+					Direct Line to Engineering: <a href="mailto:kelvin.moraes117@gmail.com" class="text-white/50 hover:text-white transition-colors">kelvin.moraes117@gmail.com</a>
 				</div>
 			</div>
 		</section>
 	</main>
 
-	<footer class="py-12 px-6 border-t border-white/5 text-sm text-white/40">
+	<footer class="py-12 px-6 border-t border-white/5 bg-[#0A0C10] text-xs font-mono text-white/30">
 		<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-			<div class="flex items-center gap-2">
-				<span class="font-mono font-bold text-white/60">AxionFlow</span>
-				<span>© 2026</span>
+			<div class="flex items-center gap-3">
+				<div class="w-4 h-4 bg-white/10 rounded-sm"></div>
+				<span class="font-bold text-white/50">AXIONFLOW SYSTEM</span>
+				<span>:: V1.0.0</span>
 			</div>
 			<div class="flex gap-8">
-				<a href="https://github.com/KerubinDev/AxionFlow" class="hover:text-white transition-colors">GitHub</a>
-				<a href="#" class="hover:text-white transition-colors">Legal</a>
-				<a href="mailto:kelvin.moraes117@gmail.com" class="hover:text-white transition-colors">Contact</a>
+				<a href="https://github.com/KerubinDev/AxionFlow" class="hover:text-white transition-colors">SOURCE_CODE</a>
+				<a href="#" class="hover:text-white transition-colors">LEGAL_NOTICE</a>
+				<a href="mailto:kelvin.moraes117@gmail.com" class="hover:text-white transition-colors">CONTACT_CHANNEL</a>
 			</div>
 		</div>
 	</footer>
