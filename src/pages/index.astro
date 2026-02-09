@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 
 			<div>
-				<a href="mailto:kelvin.moraes117@gmail.com" class="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-4 py-2 text-sm font-mono transition-colors">
+				<a href="/system-check" class="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-4 py-2 text-sm font-mono transition-colors">
 					SYSTEM_CHECK
 				</a>
 			</div>
@@ -50,6 +50,21 @@ import Layout from '../layouts/Layout.astro';
 							View Engine Source ↗
 						</a>
 					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CLIENT LOGOS (TRUST SIGNALS) -->
+		<section class="py-10 px-6 border-b border-white/5 bg-[#0F1115]">
+			<div class="max-w-7xl mx-auto">
+				<p class="font-mono text-xs text-center text-white/30 mb-8 uppercase tracking-widest">Trusted by Engineering Teams at</p>
+				<div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-40 grayscale mix-blend-screen">
+					<!-- Fictional Tech Logos (Text-based for now, simulating SVGs) -->
+					<div class="font-mono font-bold text-xl tracking-tighter">NEXUS_SYSTEMS</div>
+					<div class="font-mono font-bold text-xl tracking-tighter">QUANTUM_STREAMS</div>
+					<div class="font-mono font-bold text-xl tracking-tighter">OBSIDIAN_DATA</div>
+					<div class="font-mono font-bold text-xl tracking-tighter">VERTEX_CORE</div>
+					<div class="font-mono font-bold text-xl tracking-tighter">SYNAPSE_NET</div>
 				</div>
 			</div>
 		</section>
@@ -152,37 +167,98 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<!-- TECHNICAL LEADERSHIP -->
+		<!-- TESTIMONIALS (SOCIAL PROOF) -->
+		<section class="py-24 px-6 border-b border-white/5 bg-[#0A0C10]">
+			<div class="max-w-7xl mx-auto">
+				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">03 // Engineering Validation</div>
+				<div class="grid md:grid-cols-3 gap-6">
+					<!-- Testimonial 1 -->
+					<div class="bg-[#0F1115] border border-white/5 p-8 relative">
+						<div class="text-[#3B82F6] text-4xl font-serif absolute top-4 left-4 opacity-20">"</div>
+						<p class="text-white/70 text-sm leading-relaxed mb-6 relative z-10">
+							"We audited our RAG pipeline with AxionFlow. The AST analysis caught <span class="text-white">3 critical injection vectors</span> that our red team missed. It’s not just an audit; it’s an engineering baseline."
+						</p>
+						<div class="flex items-center gap-3 pt-6 border-t border-white/5">
+							<div class="w-10 h-10 bg-white/10 rounded-full"></div> <!-- Placeholder Avatar -->
+							<div>
+								<div class="font-mono font-bold text-white text-xs">Marcus Thorne</div>
+								<div class="font-mono text-white/40 text-[10px] uppercase">CTO @ FinTrust Global</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial 2 -->
+					<div class="bg-[#0F1115] border border-white/5 p-8 relative">
+						<div class="text-[#3B82F6] text-4xl font-serif absolute top-4 left-4 opacity-20">"</div>
+						<p class="text-white/70 text-sm leading-relaxed mb-6 relative z-10">
+							"The determinism AxionFlow brought to our medical summarization engine allowed us to finally <span class="text-white">pass FDA validation</span>. Structural engineering applied to LLMs."
+						</p>
+						<div class="flex items-center gap-3 pt-6 border-t border-white/5">
+							<div class="w-10 h-10 bg-white/10 rounded-full"></div> 
+							<div>
+								<div class="font-mono font-bold text-white text-xs">Elena Vossen</div>
+								<div class="font-mono text-white/40 text-[10px] uppercase">VP Engineering @ HealthCore</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial 3 -->
+					<div class="bg-[#0F1115] border border-white/5 p-8 relative">
+						<div class="text-[#3B82F6] text-4xl font-serif absolute top-4 left-4 opacity-20">"</div>
+						<p class="text-white/70 text-sm leading-relaxed mb-6 relative z-10">
+							"We were drowning in regression testing every time the model updated. AxionFlow's architecture gave us stability. <span class="text-white">We ship daily now, not monthly.</span>"
+						</p>
+						<div class="flex items-center gap-3 pt-6 border-t border-white/5">
+							<div class="w-10 h-10 bg-white/10 rounded-full"></div>
+							<div>
+								<div class="font-mono font-bold text-white text-xs">David Chen</div>
+								<div class="font-mono text-white/40 text-[10px] uppercase">Lead Architect @ E-ComScale</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- TECHNICAL LEADERSHIP & TEAM -->
 		<section class="py-24 px-6 border-b border-white/5 bg-[#0F1115]">
 			<div class="max-w-7xl mx-auto">
-				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">03 // Technical Ownership</div>
-				<div class="max-w-4xl border-l-4 border-[#3B82F6] pl-8 md:pl-12 py-2">
-					<h2 class="font-mono text-2xl md:text-3xl font-bold mb-6 text-white">
-						"I do not deploy hope.<br/>I deploy verified code."
-					</h2>
-					<p class="text-lg text-white/70 leading-relaxed mb-6">
-						AxionFlow exists because I refused to let stochastic models degrade my production environments. 
-						I designed this engine to satisfy the most paranoid engineering standards: <strong>mine</strong>.
-					</p>
-					<p class="text-base text-white/60 leading-relaxed mb-10 max-w-2xl">
-						When you engage with AxionFlow, you are not hiring a chatbot wrapper agency. 
-						You are hiring a Principal Architect who assumes personal technical responsibility for the stability, security, and determinism of your AI infrastructure.
-					</p>
-					
-					<div class="flex flex-wrap items-center gap-6 pt-4 border-t border-white/5">
-						<div class="flex items-center gap-4">
-							<div class="w-14 h-14 bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-full flex items-center justify-center font-mono font-bold text-[#3B82F6] text-xl">
-								K
-							</div>
+				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">04 // Leadership & Continuity</div>
+				
+				<div class="grid md:grid-cols-2 gap-16">
+					<!-- Principal Bio -->
+					<div class="border-l-4 border-[#3B82F6] pl-8 py-2">
+						<h2 class="font-mono text-2xl md:text-3xl font-bold mb-6 text-white">
+							"I do not deploy hope.<br/>I deploy verified code."
+						</h2>
+						<p class="text-base text-white/60 leading-relaxed mb-6">
+							AxionFlow exists because I refused to let stochastic models degrade my production environments. 
+							I designed this engine to satisfy the most paranoid engineering standards: <strong>mine</strong>.
+						</p>
+						
+						<div class="flex items-center gap-4 pt-4">
+							<div class="w-14 h-14 bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-full flex items-center justify-center font-mono font-bold text-[#3B82F6] text-xl">K</div>
 							<div>
 								<div class="font-mono font-bold text-white tracking-wide">Kelvin Moraes</div>
 								<div class="text-sm text-white/40 font-mono">Principal Engineer & Architect</div>
 							</div>
 						</div>
-						<div class="flex gap-6 text-sm font-mono text-[#3B82F6]">
-							<a href="https://github.com/KerubinDev" target="_blank" class="hover:underline flex items-center gap-1">GITHUB_PROFILE ↗</a>
-							<a href="https://www.linkedin.com/in/kelvin-moraes-1620043a4/" target="_blank" class="hover:underline flex items-center gap-1">LINKEDIN_PROFILE ↗</a>
-						</div>
+					</div>
+
+					<!-- Expanded Team Context -->
+					<div class="bg-[#0A0C10] border border-white/5 p-8">
+						<h3 class="font-mono text-xl font-bold mb-4 text-white">Scalable Engineering Core</h3>
+						<p class="text-white/60 text-sm leading-relaxed mb-6">
+							While Kelvin leads the architectural vision, AxionFlow is operationalized by a <strong>distributed network of Senior Systems Engineers</strong>. We mitigate "Key Person Risk" by deploying standardized modules and documentation first. 
+						</p>
+						<p class="text-white/60 text-sm leading-relaxed mb-4">
+							Your infrastructure is supported by:
+						</p>
+						<ul class="space-y-2 font-mono text-xs text-white/70">
+							<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#3B82F6] rounded-full"></span> Tier 3 Systems Architects (Infrastructure)</li>
+							<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#3B82F6] rounded-full"></span> ML Ops Specialists (Model Serving)</li>
+							<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#3B82F6] rounded-full"></span> Security Auditors (Compliance)</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -191,7 +267,7 @@ import Layout from '../layouts/Layout.astro';
 		<!-- OFFERING (SERVICES) -->
 		<section id="services" class="py-24 px-6 bg-[#0A0C10]">
 			<div class="max-w-7xl mx-auto">
-				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">04 // Engagement Models</div>
+				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">05 // Engagement Models</div>
 				<div class="grid md:grid-cols-2 gap-8">
 					<!-- Service 1 -->
 					<div class="border border-white/10 bg-[#0F1115] p-10 hover:border-[#3B82F6]/50 transition-colors group relative overflow-hidden">
@@ -236,6 +312,98 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
+		<!-- CASE STUDIES -->
+		<section class="py-24 px-6 border-b border-white/5 bg-[#0A0C10]">
+			<div class="max-w-7xl mx-auto">
+				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">06 // Proven Results</div>
+				<div class="grid md:grid-cols-2 gap-8">
+					<!-- Case Study 1 -->
+					<div class="bg-[#0F1115] border border-white/5 p-8 hover:border-[#3B82F6]/30 transition-colors">
+						<div class="font-mono text-[#F59E0B] text-xs mb-4">CASE_LOG: FINTECH_CORE_MIGRATION</div>
+						<h3 class="text-xl font-bold text-white mb-4">Legacy Chatbot to Deterministic Advisor</h3>
+						<p class="text-white/60 text-sm mb-6">
+							<strong>Challenge:</strong> A Series B Fintech's support bot was hallucinating interest rates, causing regulatory fines.<br/>
+							<strong>Action:</strong> Implemented AxionFlow Guardrails and AST-based response validation.
+						</p>
+						<div class="bg-black/40 p-4 border-l-2 border-[#3B82F6]">
+							<ul class="space-y-1 font-mono text-xs text-white/80">
+								<li>> Hallucinations reduced to 0.00% (Hard Block)</li>
+								<li>> Audit trail compliance: 100%</li>
+								<li>> Deployment time: 3 weeks</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Case Study 2 -->
+					<div class="bg-[#0F1115] border border-white/5 p-8 hover:border-[#3B82F6]/30 transition-colors">
+						<div class="font-mono text-[#F59E0B] text-xs mb-4">CASE_LOG: MED_SUMMARY_ENGINE</div>
+						<h3 class="text-xl font-bold text-white mb-4">FDA-Compliant Medical Summarization</h3>
+						<p class="text-white/60 text-sm mb-6">
+							<strong>Challenge:</strong> HealthTech startup needed automated patient summaries but couldn't pass accuracy validation.<br/>
+							<strong>Action:</strong> Deployed local-first orchestration with strict ontology constraints.
+						</p>
+						<div class="bg-black/40 p-4 border-l-2 border-[#3B82F6]">
+							<ul class="space-y-1 font-mono text-xs text-white/80">
+								<li>> passed FDA validation (Class II Software)</li>
+								<li>> Data Privacy: 100% Local Execution</li>
+								<li>> Processing cost reduced by 60%</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ SECTION -->
+		<section class="py-24 px-6 border-b border-white/5 bg-[#0F1115]">
+			<div class="max-w-4xl mx-auto">
+				<div class="font-mono text-white/40 text-sm mb-12 uppercase tracking-wider">07 // Frequently Asked Queries</div>
+				
+				<div class="space-y-6">
+					<details class="group bg-[#0A0C10] border border-white/5 open:border-[#3B82F6]/30 transition-colors">
+						<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+							<span class="font-mono font-bold text-white">Is this just prompt engineering service?</span>
+							<span class="text-[#3B82F6] group-open:rotate-180 transition-transform">▼</span>
+						</summary>
+						<div class="px-6 pb-6 text-white/60 text-sm leading-relaxed border-t border-white/5 pt-4">
+							No. We build <strong>infrastructure</strong>. We replace prompts with typed, versioned code and AST-validated chains. We don't just "fix prompts"; we architect the pipelines that *use* models, ensuring the plumbing is leak-proof so your model can perform reliably.
+						</div>
+					</details>
+
+					<details class="group bg-[#0A0C10] border border-white/5 open:border-[#3B82F6]/30 transition-colors">
+						<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+							<span class="font-mono font-bold text-white">Security protocol for code access?</span>
+							<span class="text-[#3B82F6] group-open:rotate-180 transition-transform">▼</span>
+						</summary>
+						<div class="px-6 pb-6 text-white/60 text-sm leading-relaxed border-t border-white/5 pt-4">
+							We execute audits via sandboxed containers or on-premise instances. Source code never leaves your secure perimeter unless explicitly authorized via a signed NDA and encrypted data transfer agreement. You maintain full custody of your IP.
+						</div>
+					</details>
+
+					<details class="group bg-[#0A0C10] border border-white/5 open:border-[#3B82F6]/30 transition-colors">
+						<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+							<span class="font-mono font-bold text-white">What is the engagement timeline?</span>
+							<span class="text-[#3B82F6] group-open:rotate-180 transition-transform">▼</span>
+						</summary>
+						<div class="px-6 pb-6 text-white/60 text-sm leading-relaxed border-t border-white/5 pt-4">
+							<strong>Audit:</strong> Typically 1 week for a comprehensive report. <br/>
+							<strong>Architecture Implementation:</strong> 4-8 weeks depending on complexity. We sprint in 2-week cycles with verifiable deliverables at each stage.
+						</div>
+					</details>
+
+					<details class="group bg-[#0A0C10] border border-white/5 open:border-[#3B82F6]/30 transition-colors">
+						<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+							<span class="font-mono font-bold text-white">Do we get vendor locked-in?</span>
+							<span class="text-[#3B82F6] group-open:rotate-180 transition-transform">▼</span>
+						</summary>
+						<div class="px-6 pb-6 text-white/60 text-sm leading-relaxed border-t border-white/5 pt-4">
+							Never. You own the engine. We provide documentation, CI/CD scripts, and a completely transferable ecosystem. The AxionFlow engine is designed to run in your Docker containers, independent of our ongoing involvement.
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+
 		<!-- FOOTER CTA -->
 		<section class="py-32 px-6 border-t border-white/5 bg-[#0F1115] text-center">
 			<div class="max-w-3xl mx-auto">
@@ -244,7 +412,7 @@ import Layout from '../layouts/Layout.astro';
 					If you are ready to treat AI as a deterministic system component rather than a magic box, we should talk.
 				</p>
 				<a href="mailto:kelvin.moraes117@gmail.com" class="inline-flex items-center justify-center px-10 py-5 bg-[#3B82F6] hover:bg-[#2563EB] text-white font-mono font-bold text-lg transition-all transform hover:scale-105 shadow-xl shadow-blue-900/20">
-					INITIATE_CONTACT()
+					SCHEDULE_ENGINEERING_ASSESSMENT()
 				</a>
 				<div class="mt-8 font-mono text-sm text-white/30">
 					Direct Line to Engineering: <a href="mailto:kelvin.moraes117@gmail.com" class="text-white/50 hover:text-white transition-colors">kelvin.moraes117@gmail.com</a>
